@@ -1,6 +1,6 @@
+#define KUTIL_IMPL
 #include <kutil.h>
-#include <stdio.h>
-#include <stdlib.h>
+
 
 int main() {
 
