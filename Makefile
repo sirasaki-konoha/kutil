@@ -56,7 +56,7 @@ $(STATIC_LIB): $(LIB_OBJECTS)
 # Create shared library
 $(SHARED_LIB): $(LIB_OBJECTS)
 	@mkdir -p $(LIBDIR)
-	$(CC) -shared $^ -o $@ $(LDLIBS)
+	$(CC) -shared $^ -o $@ $(LDLIBS) 
 
 # Create object files from library sources with -fPIC (for both static and shared libraries)
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
